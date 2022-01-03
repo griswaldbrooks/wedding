@@ -7,8 +7,11 @@ assignees: ''
 
 ---
 
-#Use Case
+# Use Case
+Motivation for the issue.
 
-#Acceptance Criteria
+# Acceptance Criteria
+Description of what it means to be done.
 
-#Notes
+# Notes
+Anything else useful?
