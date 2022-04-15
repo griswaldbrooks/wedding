@@ -13,10 +13,10 @@
             src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <style>
-        @font-face{font-family: AlexBrush; src: url('AlexBrush-Regular.ttf');}
+        @font-face{font-family: "AlexBrush"; src: url('AlexBrush-Regular.ttf');}
         h1 {
-          font-family: AlexBrush;
-          font-size: 120px;
+          font-family: "AlexBrush";
+          font-size: clamp(7rem, 1rem + 10vw, 12rem);
         }
 
         h2  {
@@ -42,10 +42,9 @@
         }
 
         .banner {
-            min-height: 100%;
-            background-position: center;
-/*             height: 100%; */
-            background-repeat: no-repeat;
+            min-height: 70%;
+            background-position: 25% 85%;
+            background-size: cover;
             background-image: url("Hydrangea-Stylized.png")
         }
 
@@ -73,10 +72,10 @@
         }
 
         @media (max-width: 768px) {
-            .banner {
-                min-height: 50%;
+            /* .banner {
+                min-height: 30%;
                 width: 100%;
-            }
+            } */
 
             .banner-text {
                 margin-top: 0;
@@ -231,10 +230,14 @@
         </div>
         <div class="row">
             <p class="col-sm-6 left-col">
-                    Link coming soon
+              <a href="https://www.zola.com/wedding/kirtadzebrooks/rsvp">
+                Please RSVP by May 1st
+              </a>
             </p>
             <p class="col-sm-6 right-col">
-                    Link coming soon
+              <a href="https://www.zola.com/wedding/kirtadzebrooks/registry">
+                Wedding Registry
+              </a>
             </p>
         </div>
     <div class="row">
