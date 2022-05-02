@@ -46,6 +46,17 @@ h1, h2, h3, h4, h5 {
   color: #263238;
 }
 
+.featured-content h4 {
+    font-family: 'Open Sans';
+}
+
+img.section-break {
+  height: 0.5vh;
+  width: 1.0vw;
+  object-fit: cover;
+
+}
+
 ul {
   margin: 0;
   padding: 0;
