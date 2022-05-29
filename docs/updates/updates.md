@@ -2,6 +2,7 @@
 # Vaccination
 The health and safety of all attendees is important to us.  
 We request that all guests are fully vaccinated against COVID-19.
+Make sure to get tested a few days before the wedding and travel safely.
 
 # Ceremony Itinerary
 - Processional
