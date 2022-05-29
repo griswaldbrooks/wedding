@@ -103,6 +103,7 @@ Please come ready to feast and indulge in libation.
 
 Those of you who have dietary restrictions will have options available,
 but notifying us ahead of time will help prepare the venue in advance.
+You will still need to inform the waiters of your restrictions when ordering your entree.
 
 All meat is halal and kosher.
 
