@@ -61,9 +61,9 @@ All events and lodging are co-located at
 
 ![Venue](venue.png "Venue")
 
-Cocktails at Brittons Oak Room
-Reception at the Tea House Garden
-After Party at Lorenzo's Restaurant
+Cocktails at Brittons Oak Room  
+Reception at the Tea House Garden  
+After Party at Lorenzo's Restaurant  
 
 A more detailed map can be found [here](https://nicotrasballroom.com/tea-house-garden/).
 
