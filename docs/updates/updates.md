@@ -35,22 +35,21 @@ Judy Lawley
 
 #### Bridesmaids
 - Marine Kurdadze, ESQ: Maid of honor, Benevolent renaissance woman, the unstoppable, ever loveable supermom
-- Elaine To, PhD: Modern day explorer of scientific truths in the biological world
-- Rena Lee: On a journey to protect our Earth for generations to come
-- Suchita Lal: Master of jest, dance, the feline spirit, and invaluable life lessons
 - Salome Khelashvili: Philanthropic virtuoso and utter cool cat
-- Ekaterina Stomakhina: Mysterious femme fatale on a journey to awaken the force within
+- Suchita Lal: Master of jest, dance, the feline spirit, and invaluable life lessons
 - Luna Wang: Zealous social butterfly, determined to explore the globe
+- Rena Lee: On a journey to protect our Earth for generations to come
+- Ekaterina Stomakhina: Mysterious femme fatale on a journey to awaken the force within
+- Elaine To, PhD: Modern day explorer of scientific truths in the biological world
 
 #### Groomsmen
 - Danny Wong: Best man, peregrine potentate, puissant paragon, and plauditory pard
-- Matthew Merrifield: Prestigious parser, purloiner, and producer of packages
-- Brian Cairl: Perspicacious prodigy of punctilious perplexors, and template tradesman
 - Joseph Wong: Pulchritudinous convoy, curate, and confidant to rambunctious rascals
 - Christopher Wong: Tenacious troubadour, preux chevalier, boisterous bootstrapper
 - Agraj Jain: Paladin of perceptrons, protean pollyanna, pantologist with panache
+- Brian Cairl: Perspicacious prodigy of punctilious perplexors, and template tradesman
 - Bilal Gill: Phlogisticated fastidious phenom, and pilose piece de resistance
-
+- Matthew Merrifield: Prestigious parser, purloiner, and producer of packages
 
 ### formatted like this
 ![Wedding Party](wedding-party.png "Wedding Party")
