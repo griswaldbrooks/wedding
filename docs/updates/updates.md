@@ -34,7 +34,7 @@ Judy Lawley
 - Jacob Evan Solomon ESQ: Presiding, practicing prerogative of praxis, platonist
 
 #### Bridesmaids
-- Marine Kurdadze, ESQ: Maid of honor, Benevolent renaissance woman, the unstoppable, ever loveable supermom
+- Marine Kurdadze, ESQ: Maid of honor, True renaissance woman, unstoppable, loveable, supermom
 - Salome Khelashvili: Philanthropic virtuoso and utter cool cat
 - Suchita Lal: Master of jest, dance, the feline spirit, and invaluable life lessons
 - Luna Wang: Zealous social butterfly, determined to explore the globe
