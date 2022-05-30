@@ -39,7 +39,7 @@ Judy Lawley
 - Rena Lee: On a journey to protect our Earth for generations to come
 - Suchita Lal: Master of jest, dance, the feline spirit, and invaluable life lessons
 - Salome Khelashvili: Philanthropic virtuoso and utter cool cat
-- Ekaterina Stomakhina: Mysterious femme fetal on a journey to awaken the force within
+- Ekaterina Stomakhina: Mysterious femme fatale on a journey to awaken the force within
 - Luna Wang: Zealous social butterfly, determined to explore the globe
 
 #### Groomsmen
