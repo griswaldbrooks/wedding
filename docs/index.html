@@ -13,11 +13,15 @@
             src: url('AlexBrush-Regular.ttf');
         }
 
+        #sections {
+            max-width: 720px;
+        }
+
         #wedding-party .name {
             font-family: "AlexBrush";
         }
 
-        .name, .tagline, .title, #wedding-party h3, #wedding-party h1{
+        .name, .tagline, .title, #wedding-party h3, #wedding-party h1 {
             text-align: center;
         }
 
@@ -49,26 +53,25 @@
             font-size: clamp(7rem, 1rem + 10vw, 12rem);
         }
 
+        .left-col {
+            text-align: right;
+            padding-right: 0;
+            margin-right: 0;
+        }
+
+        .center-col {
+            padding-left: 0;
+            text-align: right;
+        }
+
+        .right-col {
+            padding-left: 0;
+            text-align: left;
+        }
+
         @media (max-width: 768px) {
             .banner-text {
                 margin-top: 0;
-                text-align: right;
-            }
-
-            .left-col {
-                text-align: center;
-                margin-bottom: 0;
-                padding-bottom: 0;
-            }
-
-            .right-col {
-                text-align: center;
-                padding-bottom: 1rem;
-                margin-bottom: 2rem;
-            }
-
-            ul {
-                padding-left: 0;
             }
         }
 
@@ -89,11 +92,28 @@
             margin-top: 10px;
             padding: 0;
         }
+
+        img {
+            max-width: 100%
+        }
+
+        #menu .row {
+            text-align: center;
+            align-items: center;
+        }
+
+        #menu p {
+            text-align: center;
+        }
+
+        #menu h4 {
+            font-family: "AlexBrush";
+        }
     </style>
 </head>
 
 <body>
-<header class="page-header banner" style="margin-top: 0">
+<header class="page-header banner">
     <div>
         <h1 class="stroke banner-text curly" style="margin-top: 0; padding: 5%">
             Tamari & Griswald<br>
@@ -103,16 +123,18 @@
 </header>
 
 <div class="container" id="sections">
-    <div id="vaccination" class="row" >
-        <h1>Vaccination</h1>
-        <p>
-            The health and safety of all attendees is important to us.
-            We request that all guests are fully vaccinated against COVID-19.
-            Make sure to get tested a few days before the wedding and travel safely.
-        </p>
+    <div class="row" id="vaccination">
+        <div class="col">
+            <h1>Vaccination</h1>
+            <p>
+                The health and safety of all attendees is important to us.
+                We request that all guests are fully vaccinated against COVID-19.
+                Make sure to get tested a few days before the wedding and travel safely.
+            </p>
+        </div>
     </div>
 
-    <div id="ceremony-itinerary" class="row" >
+    <div class="row" id="ceremony-itinerary">
         <div class="col">
             <h1>Ceremony Itinerary</h1>
             <p>Begins promptly at 6:00 PM</p>
@@ -130,7 +152,7 @@
         </div>
     </div>
 
-    <div id="wedding-party" class="container">
+    <div class="container" id="wedding-party">
         <div class="row">
             <div class="col">
                 <h1>Wedding Party</h1>
@@ -212,143 +234,242 @@
                 <p class="tagline">Prestigious parser, purloiner, and producer of packages</p>
             </div>
         </div>
-        <div id="locations">
-            <h1>Locations</h1>
-            <p>All events and lodging are co-located at</p>
-            <p class="col-sm-6 right-col">
-                <a href="https://nicotrasballroom.com">Nicotra's Ballroom</a>
-                <br>
-                <a href="https://goo.gl/maps/7SmsbWwxsfS6uxTx9">
-                    1100 South Ave, Staten Island, NY 10314
-                </a>
-            </p>
-            <img alt="venue birdseye view" src="img/venue.png"/>
+        <div class="justify-content-center" id="locations">
+            <div class="row">
+                <div class="col">
+                    <h1>Locations</h1>
+                </div>
+            </div>
 
             <div class="row">
-                <p class="col-sm-6 left-col">Cocktails - 5:00 PM</p>
-                <p class="col-sm-6 right-col">Brittons Oak</p>
+                <div class="col-lg">
+                    <p>All events and lodging are co-located at</p>
+                    <p class="col">
+                        <a href="https://nicotrasballroom.com">Nicotra's Ballroom</a>
+                        <a href="https://goo.gl/maps/7SmsbWwxsfS6uxTx9">
+                            1100 South Ave, Staten Island, NY 10314
+                        </a>
+                    </p>
+                </div>
+                <table class="col-lg">
+                    <tr>
+                        <td class="col-auto left-col">Cocktails</td>
+                        <td class="col-auto center-col">5:00 PM</td>
+                        <td class="col-auto right-col">Brittons Oak</td>
+                    </tr>
+                    <tr>
+                        <td class="col-auto left-col">Ceremony</td>
+                        <td class="col-auto center-col">6:00 PM</td>
+                        <td class="col-auto right-col">Outdoor Garden</td>
+                    </tr>
+                    <tr>
+                        <td class="col-auto left-col">Reception</td>
+                        <td class="col-auto center-col">7:00 PM</td>
+                        <td class="col-auto right-col">Tea House</td>
+                    </tr>
+                    <tr>
+                        <td class="col-auto left-col">After Party</td>
+                        <td class="col-auto center-col">12:00 AM</td>
+                        <td class="col-auto right-col">Lorenzo's</td>
+                    </tr>
+                </table>
             </div>
-            <div class="row">
-                <p class="col-sm-6 left-col">Ceremony - 6:00 PM</p>
-                <p class="col-sm-6 right-col">Outdoor Garden</p>
+            <div class="row col">
+                <img alt="venue birdseye view" class="w-100" src="img/venue.png"/>
+                <p>
+                    A more detailed map can be found <a
+                        href="https://nicotrasballroom.com/tea-house-garden/">here</a>.
+                </p>
             </div>
-            <div class="row">
-                <p class="col-sm-6 left-col">Reception - 7:00 PM</p>
-                <p class="col-sm-6 right-col">Tea House</p>
-            </div>
-            <div class="row">
-                <p class="col-sm-6 left-col">After - 12:00 AM</p>
-                <p class="col-sm-6 right-col">Lorenzo's</p>
-            </div>
-            <p>
-                A more detailed map can be found <a href="https://nicotrasballroom.com/tea-house-garden/">here</a>.
-            </p>
+
+
         </div>
 
-        <div id="menu">
-            <h1>Menu</h1>
-            <p>
-                For those of you worried about being peckish, don't be!
-                There will be plenty of food at the cocktail hour and reception.
-            </p>
-            <h3>Cocktail Hour</h3>
-            <h4>Open Bar</h4>
-            <h4>Passed Hors d'oeuvres</h4>
-            <h4>Tuscan Table</h4>
-            <h4>Salumeria</h4>
-            <h4>International Cheeses</h4>
-            <h4>Carving Station</h4>
-            <h4>Pasta Station</h4>
-            <h4>French Regional Station</h4>
-            <h4>Eastern Seaboard Station</h4>
-            <h3>Reception Menu</h3>
-            <h4>Open Bar</h4>
-            <h4>Salad</h4>
-            Baby Arugula, Radicchio, Fennel, Prosciutto, Fresh Mozzarella, Tomatoes, White Balsamic
-            <h4>Pasta</h4>
-            Gemelh4, Creamy Pesto, Sundried Tomato and Artichokes
-            <h4>Choice of Entree</h4>
-            Boneless Braised Short Rib of Beef, Wild Mushroom Bordelaise Sauce
-            Seared Chicken with Artichoke, Spinach, Fontina Cheese, Tomato Cream Sauce
-            Crispy Branzino, Maderia Wine Truffle Reduction
-            <h4>Wedding Cake</h4>
-            <h4>Dessert Sampler</h4>
-            <p>Please come ready to feast and indulge in libation.</p>
-            <p>
-                Those of you who have dietary restrictions will have options available,
-                but notifying us ahead of time will help prepare the venue in advance.
-                You will still need to inform the waiters of your restrictions when ordering your entree.
-            </p>
-            <p>All meat is halal.</p>
-            <img alt="Georgian Table" src="updates/georgian-table.jpeg"/>
+        <div class="row" id="menu">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <h1>Menu</h1>
+                        <p>
+                            For those of you worried about being peckish, don't be!
+                            There will be plenty of food at the cocktail hour and reception.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col-lg">
+                        <h2>Reception</h2>
+                        <ul>
+                            <li>Brittons Oak</li>
+                            <li>5:00 PM - 6:00 PM</li>
+                        </ul>
+                        <h4>Open Bar</h4>
+                        <h4>Passed Hors d'oeuvres</h4>
+                        <ul>
+                            <li>Herb Crusted Lamb Chops, Port Wine
+                            <li>Spicy Sausage Stuffed Mushrooms
+                            <li>Teriyaki Sesame Chicken Lollipops
+                            <li>Honey Goat Cheese Phyllo
+                            <li>Portobello Mushroom Purse
+                            <li>Arancini, Marinara Sauce
+                            <li>Maryland Crab Cakes, Remoulade
+                        </ul>
+                        <h4>Tuscan Table</h4>
+                        <ul>
+                            <li>Grilled Market Vegetables, Marinated Cremini Mushroom Salad, Caponata with Crostini
+                                Tomato, Mozzarella and Fire Roasted Peppers, Farro Salad
+                            <li>Freshly Baked Herb Infused Focaccia, Black and Green Regional Olives
+                        </ul>
+                        <h4>Salumeria</h4>
+                        <ul>
+                            <li>Prosciutto di Parma, Mortadella, Hot and Sweet Capicola and Genoa Salami
+                        </ul>
+                        <h4>International Cheeses</h4>
+                        <ul>
+                            <li>Assorted crackers & flatbread
+                        </ul>
+                        <h4>Carving Station</h4>
+                        <ul>
+                            <li>Herb Crust Shell Stea, Port Wine Sauce
+                        </ul>
+                        <ul>
+                            <li>Roasted Boneless Leg of Lamb, Mint Demi Glace
+                        </ul>
+
+                        <h4>Pasta Station</h4>
+                        <ul>
+                            <li>Campanella, Broccoli, Sausage, Garlic Basil Broth
+                            <li>Tortellini Carbonara, Somked Bacon Cream Sauce
+                        </ul>
+                        <h4>French Regional Station</h4>
+                        <ul>
+                            <li>Nicosia Salad: Seared Ahi Tuna, Haricot Vert, Olives, Tomatoes, Hard Cooked Eggs
+                            <li>Duck Leg and Breast, Seasonal Berries, Black Currant Sauce
+                            <li>Crepes filled with Ratatouille
+                        </ul>
+                        <h4>Eastern Seaboard Station</h4>
+                        <ul>
+                            <li>Maryland Crab Cakes, Lump Crab Meat, Little Neck Clams, White Wine Butter
+                            <li>Orecchiette, Corn, Lobster, Newberg Sauce
+                            <li>Fried Oysters with Spicy Remoulade
+                        </ul>
+                    </div>
+                    <div class="col-lg">
+                        <h2>Wedding Dinner</h2>
+                        <ul>
+                            <li>Tea House Garden</li>
+                            <li>7:00 PM - 12:00 AM</li>
+                        </ul>
+                        <h4>Open Bar</h4>
+                        <h4>Salad</h4>
+                        <ul>
+                            <li>Baby Arugula, Radicchio, Fennel, Prosciutto, Fresh Mozzarella, Tomatoes, White Balsamic
+                        </ul>
+                        <h4>Pasta</h4>
+                        <ul>
+                            <li>Gemel, Creamy Pesto, Sundried Tomato and Artichokes
+                        </ul>
+                        <h4>Choice of Entree</h4>
+                        <ul>
+                            <li>Boneless Braised Short Rib of Beef, Wild Mushroom Bordelaise Sauce</li>
+                            <li>Seared Chicken with Artichoke, Spinach, Fontina Cheese, Tomato Cream Sauce</li>
+                            <li>Crispy Branzino, Maderia Wine Truffle Reduction</li>
+                        </ul>
+                        <h4>Wedding Cake</h4>
+                        <ul>
+                            <li>Chocolate sponge with Chocolate Mousse Raspberry and Banana</li>
+                            <li>Client requesting purple peonies please see attached phot for reference</li>
+                        </ul>
+                        <h4>Dessert Sampler</h4>
+                        <ul>
+                            <li>Tiramisu paired with a fruit tart</li>
+                            <li>Pedestals of Italian Cookies on each table</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Regular and Decaffeinated Coffee and Tea Milk, Half & Half, Sugar & Sweeteners Assorted Soft
+                            Drinks will be available.</p>
+                        <p>Please come ready to feast and indulge in libation.</p>
+                        <p>
+                            Those of you who have dietary restrictions will have options available,
+                            but notifying us ahead of time will help prepare the venue in advance.
+                            You will still need to inform the waiters of your restrictions when ordering your entree.
+                        </p>
+                        <p>All meat is halal.</p>
+                        <img alt="Georgian Table" class="" src="updates/georgian-table.jpeg"/>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="row" id="dress-code">
+            <div class="col">
+                <h1>Attire</h1>
+                <p>
+                    Dashing as we all are in our skinny jeans, we request that guests attend in semi-formal or festive
+                    attire.
+                    What are those attires? <a href="https://www.brides.com/story/wedding-dress-code-explained">This
+                    article
+                    has some
+                    guidelines</a> but at a glance
+                </p>
+                <img alt="Dress Code: semi-formal" src="updates/dress-code.png"/>
 
-        <div id="dress-code">
-            <h1>Attire</h1>
-            <p>
-                Dashing as we all are in our skinny jeans, we request that guests attend in semi-formal or festive
-                attire.
-                What are those attires? <a href="https://www.brides.com/story/wedding-dress-code-explained">This article
-                has some
-                guidelines</a> but at a glance
-            </p>
-            <img alt="Dress Code: semi-formal" src="updates/dress-code.png"/>
+                <p>
+                    Or in other words
+                </p>
 
-            <p>
-                Or in other words
-            </p>
+                <p>
+                    Guests are encouraged to wear
+                </p>
+                <ul>
+                    <li> Necktie or bow tie
+                    <li> Suit jacket or blazer
+                    <li> Dress pants or slacks
+                    <li> Dress shoes or loafers
+                    <li> Midi, Maxi, Cocktail dresses
+                    <li> Pantsuits or jumpsuits
+                    <li> Heels, flats, or sandals
+                    <li> Classic color combinations or vibrant flair
+                </ul>
 
-            <p>
-                Guests are encouraged to wear
-            </p>
-            <ul>
-                <li> Necktie or bow tie
-                <li> Suit jacket or blazer
-                <li> Dress pants or slacks
-                <li> Dress shoes or loafers
-                <li> Midi, Maxi, Cocktail dresses
-                <li> Pantsuits or jumpsuits
-                <li> Heels, flats, or sandals
-                <li> Classic color combinations or vibrant flair
-            </ul>
-
-            <p>
-                Guests are discouraged from wearing
-            </p>
-            <ul>
-                <li>T-shirts
-                <li>Jeans
-                <li>Sneakers
-                <li>White or floor length dresses
-                <li>Anything that prevents you from dancing
-            </ul>
-            <p>
-                But ultimately, we just want people to dress up a little.
-                It's a fun party and we want everyone to look sharp.
-            </p>
-            <img alt="Dressed up" src="updates/dressed-up.jpg"/>
+                <p>
+                    Guests are discouraged from wearing
+                </p>
+                <ul>
+                    <li>T-shirts
+                    <li>Jeans
+                    <li>Sneakers
+                    <li>White or floor length dresses
+                    <li>Anything that prevents you from dancing
+                </ul>
+                <p>
+                    But ultimately, we just want people to dress up a little.
+                    It's a fun party and we want everyone to look sharp.
+                </p>
+                <img alt="Dressed up" src="updates/dressed-up.jpg"/>
+            </div>
         </div>
         <div id="photo-album">
+            <h2>Photography</h2>
             <p>
                 While we would appreciate no phones during the ceremony,
                 we would love it if people captured those special moments during the cocktail
                 hour and reception. It would be wonderful if people could
-            </p>
             <a href="https://photos.app.goo.gl/YAiyuvyqSTo6kNZC8">
-                Upload to this Google Photo Album
+                upload to this Google Photo Album
             </a>
+            </p>
         </div>
 
         <div id="registry">
             <h2>Registry</h2>
+            <p>
+                Here's a link to our
             <a href="https://www.zola.com/wedding/kirtadzebrooks/registry">
                 Wedding Registry
-            </a>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <img alt="wedding-locations" class="gallery-img center-block" src="Tea-House-306RS.jpg">
-            </div>
+            </p>
         </div>
         <div class="byline">
             <p>
