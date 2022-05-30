@@ -38,7 +38,7 @@ Judy Lawley
 - Salome Khelashvili: Philanthropic virtuoso and utter cool cat
 - Suchita Lal: Master of jest, dance, the feline spirit, and invaluable life lessons
 - Luna Wang: Zealous social butterfly, determined to explore the globe
-- Rena Lee: On a journey to protect our Earth for generations to come
+- Rena Lee: Protecting our Earth for generations to come
 - Ekaterina Stomakhina: Mysterious femme fatale on a journey to awaken the force within
 - Elaine To, PhD: Modern day explorer of scientific truths in the biological world
 
