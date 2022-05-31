@@ -10,7 +10,12 @@
     <style>
         @font-face {
             font-family: "AlexBrush";
-            src: url('AlexBrush-Regular.ttf');
+            src: url('fonts/AlexBrush-Regular.ttf');
+        }
+
+        @font-face {
+            font-family: "Marco";
+            src: url('fonts/MarcoPE-Regular.ttf');
         }
 
         #sections {
@@ -54,7 +59,7 @@
             margin-left: auto;
             margin-right: auto;
             font-family: "AlexBrush";
-            font-size: clamp(7rem, 1rem + 10vw, 12rem);
+            font-size: clamp(5rem, 1rem + 10vw, 10rem);
         }
 
         .left-col {
@@ -114,8 +119,17 @@
             font-family: "AlexBrush";
         }
 
+        h2, h3 {
+            font-family: "Marco";
+        }
+
         #menu .row {
             text-align: center;
+            align-items: center;
+        }
+
+        #wedding-party .tagline {
+            min-height: 3rem;
             align-items: center;
         }
 
@@ -138,6 +152,18 @@
         </h1>
     </div>
 </header>
+
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" href="#ceremony-itinerary">Ceremony</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#menu">Menu</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#dress-code">Attire</a>
+    </li>
+</ul>
 
 <div class="container" id="sections">
     <div class="row" id="vaccination">
@@ -218,7 +244,7 @@
         <div class="row">
             <div class="col">
                 <h3 class="title">Officiant</h3>
-                <p class="tagline">Presiding, practicing prerogative of praxis, platonist</p>
+                <p class="">Presiding, practicing prerogative of praxis, platonist</p>
                 <h4 class="name">Jacob Evan Solomon ESQ</h4>
             </div>
         </div>
@@ -519,6 +545,7 @@
                 upload to this Google Photo Album
             </a>
         </p>
+        <img class="img-fluid" src="updates/german-selfie.jpg" alt="Selfie Time!"/>
     </div>
 
     <div class="byline">
