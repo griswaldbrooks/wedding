@@ -1,51 +1,56 @@
+<!doctype html>
 <html lang="en">
 <head>
     <title>Tamari & Griswald Wedding</title>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" rel="stylesheet">
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
-          integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" rel="stylesheet">
-    <script crossorigin="anonymous"
-            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-            src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <style>
-        @font-face{font-family: "AlexBrush"; src: url('AlexBrush-Regular.ttf');}
-        h1 {
-          font-family: "AlexBrush";
-          font-size: clamp(7rem, 1rem + 10vw, 12rem);
+        @font-face {
+            font-family: "AlexBrush";
+            src: url('fonts/AlexBrush-Regular.ttf');
         }
 
-        h2  {
-          font-family: "Raleway", sans-serif
+        @font-face {
+            font-family: "Marco";
+            src: url('fonts/MarcoPE-Regular.ttf');
+        }
+
+        #sections {
+            max-width: 720px;
+        }
+
+        #wedding-party .name {
+            font-family: "AlexBrush";
+        }
+
+        .name, .tagline, .title, #wedding-party h3, #wedding-party h1 {
+            text-align: center;
         }
 
         body, html {
-            height: 100%
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 15px;
-        }
-
-        .ul-block {
-            display: inline-block;
-            text-align: left;
+            font-family: "Raleway", sans-serif;
+            height: 100%;
+            flex-direction: column;
+            display: flex;
+            text-align: center;
         }
 
         li {
-            text-align: left;
+            list-style-type: none;
         }
 
         .banner {
             min-height: 70%;
             background-position: 25% 85%;
             background-size: cover;
-            background-image: url("Hydrangea-Stylized.png")
+            background-image: url("img/Hydrangea-Stylized.png");
+        }
+
+        #sections {
+            padding-top: 3rem;
         }
 
         .banner-text {
@@ -53,17 +58,23 @@
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        .when {
-            text-align: right
-        }
-
-        .where {
-            text-align: left
+            font-family: "AlexBrush";
+            font-size: clamp(5rem, 1rem + 10vw, 10rem);
         }
 
         .left-col {
+            text-align: right;
+        }
+
+        .menu-footer {
+            padding-top: 1rem;
+        }
+
+        #menu .event-time {
+            padding-bottom: 1rem;
+        }
+
+        .center-col {
             text-align: right;
         }
 
@@ -71,45 +82,14 @@
             text-align: left;
         }
 
-        @media (max-width: 768px) {
-            /* .banner {
-                min-height: 30%;
-                width: 100%;
-            } */
-
-            .banner-text {
-                margin-top: 0;
-                text-align: right;
-            }
-
-            .when {
-                text-align: center;
-            }
-
-            .where {
-                text-align: center;
-            }
-
-            .left-col {
-                text-align: center;
-                margin-bottom: 0;
-                padding-bottom: 0;
-            }
-
-            .right-col {
-                text-align: center;
-                padding-bottom: 1rem;
-                margin-bottom: 2rem;
-            }
-
-            ul {
-                padding-left: 0;
-            }
+        #dress-code .row {
+            text-align: left;
         }
 
-        .gallery-img {
-            max-height: 80%;
-            max-width: 80%;
+        @media (max-width: 768px) {
+            .banner-text {
+                margin-top: 0;
+            }
         }
 
         .stroke {
@@ -119,140 +99,481 @@
             -webkit-text-stroke-color: black;
         }
 
-        .box {
-            padding: 0 3px;
-            border: 1px solid lightgrey;
-            width: 2.6rem;
-            word-break: keep-all;
-        }
-
         .byline {
             font-size: 1rem;
             color: lightgray;
-            display:flex;
+            display: flex;
             flex-direction: column;
-            justify-content:center;
-            align-items:center;
+            justify-content: center;
+            align-items: center;
             margin-top: 10px;
-            padding:0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        h1 {
+            padding-top: 2rem;
+            font-family: "AlexBrush";
+        }
+
+        h2, h3 {
+            font-family: "Marco";
+        }
+
+        #menu .row {
+            text-align: center;
+            align-items: center;
+        }
+
+        #wedding-party .tagline {
+            align-items: center;
+        }
+
+        #menu p {
+            text-align: center;
+        }
+
+        #menu h4 {
+            font-family: "AlexBrush";
         }
     </style>
 </head>
 
 <body>
-<header class="page-header banner" style="margin-top: 0">
+<header class="page-header banner">
     <div>
-        <h1 class="stroke banner-text" style="margin-top: 0; padding: 5%">
+        <h1 class="stroke banner-text curly" style="margin-top: 0; padding: 5%">
             Tamari & Griswald<br>
             <small>June 11th 2022</small>
         </h1>
     </div>
 </header>
 
-<div class="container" id="wedding">
-  <div class="row visible-sm visible-md visible-lg">
-      <h2 class="col-xs-6 when">Date</h2>
-      <h2 class="col-xs-6 where">Venue</h2>
-  </div>
-  <div class="row visible-xs">
-      <h2 class="col-xs-12 when">Date & Venue</h2>
-  </div>
-  <div class="row">
-      <p class="col-sm-6 left-col"> Saturday, June 11th, 2022</p>
-      <p class="col-sm-6 right-col">
-        <a href="https://nicotrasballroom.com">Nicotra's Ballroom</a>
-        <br>
-            <a href="https://goo.gl/maps/7SmsbWwxsfS6uxTx9">
-                1100 South Ave, Staten Island, NY 10314
-            </a>
-      </p>
-  </div>
-
-    <div class="row visible-sm visible-md visible-lg">
-        <h2 class="col-xs-6 when">When</h2>
-        <h2 class="col-xs-6 where">Where</h2>
-    </div>
-    <div class="row visible-xs">
-        <h2 class="col-xs-12 when">When & Where</h2>
-    </div>
-    <div class="row">
-        <p class="col-sm-6 left-col">Cocktails - 5:00 PM</p>
-        <p class="col-sm-6 right-col">Brittons Oak</p>
-    </div>
-    <div class="row">
-        <p class="col-sm-6 left-col">Ceremony - 6:00 PM</p>
-        <p class="col-sm-6 right-col">Outdoor Garden</p>
-    </div>
-    <div class="row">
-        <p class="col-sm-6 left-col">Reception - 7:00 PM</p>
-        <p class="col-sm-6 right-col">Tea House</p>
-    </div>
-    <div class="row">
-        <p class="col-sm-6 left-col">After - 12:00 AM</p>
-        <p class="col-sm-6 right-col">Lorenzo's</p>
+<div class="container" id="sections">
+    <div class="row" id="vaccination">
+        <div class="col">
+            <h1>Vaccination</h1>
+            <p>
+                The health and safety of all attendees is important to us.
+                We request that all guests are fully vaccinated against COVID-19.
+                Make sure to get tested a few days before the wedding and travel safely.
+            </p>
+        </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-6 left-col">
-            <h2>Flying there</h2>
-            <div class="ul-block">
-                <p>Nearest airports</p>
-                <ul>
-                    <li>Newark Liberty International Airport (EWR)</li>
-                    <li>John F. Kennedy International Airport (JFK)</li>
-                    <li>LaGuardia Airport (LGA)</li>
-
-                </ul>
+    <div class="row" id="ceremony-itinerary">
+        <div class="col">
+            <h1>Ceremony Itinerary</h1>
+            <p>Begins promptly at 6:00 PM</p>
+            <div class="row">
+                <div class="col">Processional</div>
+            </div>
+            <div class="row">
+                <div class="col">Words of Welcome</div>
+            </div>
+            <div class="row">
+                <div class="col">Poetry Reading</div>
+            </div>
+            <div class="row">
+                <div class="col">Exchange of Vows</div>
+            </div>
+            <div class="row">
+                <div class="col">Exchange of Rings</div>
+            </div>
+            <div class="row">
+                <div class="col">Pronouncement</div>
+            </div>
+            <div class="row">
+                <div class="col">Ceremonial Demonstration</div>
+            </div>
+            <div class="row">
+                <div class="col">Final words</div>
+            </div>
+            <div class="row">
+                <div class="col">Recessional</div>
             </div>
         </div>
-        <div class="col-sm-6 right-col">
-            <h2>Staying there</h2>
-            <p>Hotel Block, June 10th-13th, 2022</p>
-            <p>
-                <a href="https://www.hilton.com/en/attend-my-event/ewrsigi-nkbsw-133fdacb-e819-43f1-b2e3-2bd9a08c72cc/">
-                    Hilton Garden Inn
-                </a>
-            </p>
-            <p>
-              1100 South Ave, Staten Island, NY 10314
-            </p>
-            <p>
-                (718) 477-2400
-            </p>
-            <p>
-                <b>Book by May 11, 2022</b>
-            </p>
+    </div>
+
+    <div class="container" id="wedding-party">
+        <div class="row">
+            <div class="col">
+                <h1>Wedding Party</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <h3 class="title">Father of the Bride</h3>
+                <h4 class="name">Yury Arakelov</h4>
+            </div>
+
+            <div class="col-sm">
+                <h3 class="title">Father of the Groom</h3>
+                <h4 class="name">Gerald Brooks</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <h3 class="title">Mother of the Bride</h3>
+                <h4 class="name">Lela Kirtadze</h4>
+            </div>
+            <div class="col-sm">
+                <h3 class="title">Mother of the Groom</h3>
+                <h4 class="name">Judy Lawley</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3 class="title">Officiant</h3>
+                <p class="">Presiding, practicing prerogative of praxis, platonist</p>
+                <h4 class="name">Jacob Evan Solomon ESQ</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <h3> Maid of Honor </h3>
+                <p class="tagline">Benevolent renaissance woman, the unstoppable, ever loveable supermom </p>
+                <h4 class="name"> Marine Kurdadze, ESQ </h4>
+            </div>
+            <div class="col-sm">
+                <h3>Best Man</h3>
+                <p class="tagline">Peregrine potentate, puissant paragon, and plauditory pard</p>
+                <h4 class="name"> Danny Wong </h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 class="h3">Bridesmaids</h3>
+            </div>
+            <div class="col-sm-6 order-sm-0 order-1">
+                <h3>Groomsmen</h3>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="name">Salome Khelashvili</h4>
+                <p class="tagline">Philanthropic virtuoso and utter cool cat</p>
+            </div>
+            <div class="col-sm-6 order-1 order-sm-0">
+                <h4 class="name gm-1">Joseph Wong</h4>
+                <p class="tagline gm-1">Pulchritudinous convoy, curate, and confidant to rambunctious rascals</p>
+            </div>
+            <div class="col-sm-6">
+
+                    <h4 class="name">Suchita Lal</h4>
+                    <p class="tagline"> Master of jest, dance, the feline spirit, and invaluable life lessons</p>
+            </div>
+            <div class="col-sm-6 order-1 order-sm-0">
+                <h4 class="name">Christopher Wong</h4>
+                <p class="tagline">Tenacious troubadour, preux chevalier, boisterous bootstrapper</p>
+            </div>
+            <div class="col-sm-6">
+                    <h4 class="name">Luna Wang</h4>
+                    <p class="tagline">Zealous social butterfly, determined to explore the globe</p>
+            </div>
+            <div class="col-sm-6 order-1 order-sm-0">
+                <h4 class="name">Agraj Jain</h4>
+                <p class="tagline">Paladin of perceptrons, protean pollyanna, pantologist with panache</p>
+            </div>
+            <div class="col-sm-6">
+                    <h4 class="name">Rena Lee</h4>
+                    <p class="tagline">On a journey to protect our Earth for generations to come</p>
+            </div>
+            <div class="col-sm-6 order-1 order-sm-0">
+                <h4 class="name">Brian Cairl</h4>
+                <p class="tagline">Perspicacious prodigy of punctilious perplexors, and template tradesman</p>
+            </div>
+            <div class="col-sm-6">
+                    <h4 class="name">Ekaterina Stomakhina</h4>
+                    <p class="tagline">Mysterious femme fetal on a journey to awaken the force within</p>
+            </div>
+            <div class="col-sm-6 order-1 order-sm-0">
+                <h4 class="name">Bilal Gill</h4>
+                <p class="tagline">Phlogisticated fastidious phenom, and pilose piece de resistance</p>
+            </div>
+            <div class="col-sm-6">
+                    <h4 class="name">Elaine To, PhD</h4>
+                    <p class="tagline">Modern day explorer of scientific truths in the biological world</p>
+            </div>
+            <div class="col-sm-6 order-1 order-sm-0">
+                <h4 class="name">Matthew Merrifield </h4>
+                <p class="tagline">Prestigious parser, purloiner, and producer of packages</p>
+            </div>
         </div>
     </div>
-    <div class="row visible-sm visible-md visible-lg">
-            <h2 class="col-xs-6 when">RSVP</h2>
-            <h2 class="col-xs-6 where">Registry</h2>
+    <div class="justify-content-center" id="locations">
+        <div class="row">
+            <div class="col">
+                <h1>Locations</h1>
+            </div>
         </div>
-        <div class="row visible-xs">
-            <h2 class="col-xs-12 when">RSVP & Registry</h2>
+        <div class="row align-items-center">
+            <div class="col-lg">
+                <p>All events and lodging are co-located at</p>
+                <p class="col">
+                    <a href="https://nicotrasballroom.com">Nicotra's Ballroom</a>
+                    <a href="https://goo.gl/maps/7SmsbWwxsfS6uxTx9">
+                        1100 South Ave, Staten Island, NY 10314
+                    </a>
+                </p>
+            </div>
+            <table class=" col-sm table table-borderless">
+                <tr>
+                    <td class="left-col">Cocktails</td>
+                    <td class="center-col">5:00 PM</td>
+                    <td class="right-col">Brittons Oak</td>
+                </tr>
+                <tr>
+                    <td class="left-col">Ceremony</td>
+                    <td class="center-col">6:00 PM</td>
+                    <td class="right-col">Outdoor Garden</td>
+                </tr>
+                <tr>
+                    <td class="left-col">Reception</td>
+                    <td class="center-col">7:00 PM</td>
+                    <td class="right-col">Tea House</td>
+                </tr>
+                <tr>
+                    <td class="left-col">After Party</td>
+                    <td class="center-col">12:00 AM</td>
+                    <td class="right-col">Lorenzo's</td>
+                </tr>
+            </table>
         </div>
         <div class="row">
-            <p class="col-sm-6 left-col">
-              <a href="https://www.zola.com/wedding/kirtadzebrooks/rsvp">
-                Please RSVP by May 1st
-              </a>
-            </p>
-            <p class="col-sm-6 right-col">
-              <a href="https://www.zola.com/wedding/kirtadzebrooks/registry">
-                Wedding Registry
-              </a>
-            </p>
+            <div class="col">
+                <img alt="venue birdseye view" class="w-100" src="img/venue.png"/>
+                <p>
+                    A more detailed map can be found <a
+                        href="https://nicotrasballroom.com/tea-house-garden/">here</a>.
+                </p>
+            </div>
         </div>
-    <div class="row">
-      <div class="col-sm-12">
-          <img alt="wedding-locations" class="gallery-img center-block" src="Tea-House-306RS.jpg">
-      </div>
-   </div>
-   <div class="byline">
+    </div>
+
+    <div id="registry">
+        <h1>Registry</h1>
+        <p>
+            Here's a link to our
+            <a href="https://www.zola.com/wedding/kirtadzebrooks/registry">
+                Wedding Registry
+            </a>
+        </p>
+    </div>
+
+    <div class="row" id="menu">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <h1>Menu</h1>
+                    <p>
+                        For those of you worried about being peckish, don't be!
+                        There will be plenty of food at the cocktail hour and reception.
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col-md">
+                    <h2>Cocktail Hour</h2>
+                    <div class="row">
+                        <div class="col">
+                            Brittons Oak
+                        </div>
+                    </div>
+                    <div class="row event-time">
+                        <div class="col">
+                            5:00 PM - 6:00 PM
+                        </div>
+                    </div>
+                    <h4>Open Bar</h4>
+                    <h4>Passed Hors d'oeuvres</h4>
+                    <ul>
+                        <li>Herb Crusted Lamb Chops, Port Wine
+                        <li>Spicy Sausage Stuffed Mushrooms
+                        <li>Teriyaki Sesame Chicken Lollipops
+                        <li>Honey Goat Cheese Phyllo
+                        <li>Portobello Mushroom Purse
+                        <li>Arancini, Marinara Sauce
+                        <li>Maryland Crab Cakes, Remoulade
+                    </ul>
+                    <h4>Tuscan Table</h4>
+                    <ul>
+                        <li>Grilled Market Vegetables, Marinated Cremini Mushroom Salad, Caponata with Crostini
+                            Tomato, Mozzarella and Fire Roasted Peppers, Farro Salad
+                        <li>Freshly Baked Herb Infused Focaccia, Black and Green Regional Olives
+                    </ul>
+                    <h4>Salumeria</h4>
+                    <ul>
+                        <li>Prosciutto di Parma, Mortadella, Hot and Sweet Capicola and Genoa Salami
+                    </ul>
+                    <h4>International Cheeses</h4>
+                    <ul>
+                        <li>Assorted crackers & flatbread
+                    </ul>
+                    <h4>Carving Station</h4>
+                    <ul>
+                        <li>Herb Crust Shell Stea, Port Wine Sauce
+                    </ul>
+                    <ul>
+                        <li>Roasted Boneless Leg of Lamb, Mint Demi Glace
+                    </ul>
+
+                    <h4>Pasta Station</h4>
+                    <ul>
+                        <li>Campanella, Broccoli, Sausage, Garlic Basil Broth
+                        <li>Tortellini Carbonara, Somked Bacon Cream Sauce
+                    </ul>
+                    <h4>French Regional Station</h4>
+                    <ul>
+                        <li>Nicosia Salad: Seared Ahi Tuna, Haricot Vert, Olives, Tomatoes, Hard Cooked Eggs
+                        <li>Duck Leg and Breast, Seasonal Berries, Black Currant Sauce
+                        <li>Crepes filled with Ratatouille
+                    </ul>
+                    <h4>Eastern Seaboard Station</h4>
+                    <ul>
+                        <li>Maryland Crab Cakes, Lump Crab Meat, Little Neck Clams, White Wine Butter
+                        <li>Orecchiette, Corn, Lobster, Newberg Sauce
+                        <li>Fried Oysters with Spicy Remoulade
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h2>Wedding Dinner</h2>
+                    <div class="row">
+                        <div class="col">
+                            Tea House Garden
+                        </div>
+                    </div>
+                    <div class="row event-time">
+                        <div class="col">
+                            7:00 PM - 12:00 AM
+                        </div>
+                    </div>
+                    <h4>Open Bar</h4>
+                    <h4>Salad</h4>
+                    <ul>
+                        <li>Baby Arugula, Radicchio, Fennel, Prosciutto, Fresh Mozzarella, Tomatoes, White Balsamic
+                    </ul>
+                    <h4>Pasta</h4>
+                    <ul>
+                        <li>Gemel, Creamy Pesto, Sundried Tomato and Artichokes
+                    </ul>
+                    <h4>Choice of Entree</h4>
+                    <ul>
+                        <li>Boneless Braised Short Rib of Beef, Wild Mushroom Bordelaise Sauce</li>
+                        <li>Seared Chicken with Artichoke, Spinach, Fontina Cheese, Tomato Cream Sauce</li>
+                        <li>Crispy Branzino, Maderia Wine Truffle Reduction</li>
+                    </ul>
+                    <h4>Wedding Cake</h4>
+                    <ul>
+                        <li>Chocolate sponge with Chocolate Mousse Raspberry and Banana</li>
+                        <li>Client requesting purple peonies please see attached phot for reference</li>
+                    </ul>
+                    <h4>Dessert Sampler</h4>
+                    <ul>
+                        <li>Tiramisu paired with a fruit tart</li>
+                        <li>Pedestals of Italian Cookies on each table</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row menu-footer">
+                <div class="col alert alert-light">
+                    <p>Regular and Decaffeinated Coffee and Tea, Milk, Half & Half, Sugar & Sweeteners, and Assorted Soft
+                        Drinks will be available.</p>
+                    <p>Please come ready to feast and indulge in libation.</p>
+                    <p>
+                        Those of you who have dietary restrictions will have options available,
+                        but notifying us ahead of time will help prepare the venue in advance.
+                        You will still need to inform the waiters of your restrictions when ordering your entree.
+                    </p>
+                    <p>All meat is halal.</p>
+                    <img class="img-fluid" alt="Georgian Table" class="" src="updates/georgian-table.jpeg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="dress-code">
+        <div class="col">
+            <h1>Attire</h1>
+            <p>
+                Dashing as we all are in our skinny jeans, we request that guests attend in semi-formal or festive
+                attire.
+                What are those attires? <a href="https://www.brides.com/story/wedding-dress-code-explained">This
+                article
+                has some
+                guidelines</a>
+            </p>
+            <figure class="figure">
+                <img class="img-fluid" alt="Dress Code: semi-formal" src="updates/dress-code.png"/>
+                <figcaption class="figure-caption">Semi-formal & Festive at a glance</figcaption>
+            </figure>
+
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>Guests are encouraged to wear</p>
+                    <ul>
+                        <li> Necktie or bow tie
+                        <li> Suit jacket or blazer
+                        <li> Dress pants or slacks
+                        <li> Dress shoes or loafers
+                        <li> Midi, Maxi, Cocktail dresses
+                        <li> Pantsuits or jumpsuits
+                        <li> Heels, flats, or sandals
+                        <li> Classic color combinations or vibrant flair
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>Guests are discouraged from wearing</p>
+                    <ul>
+                        <li>T-shirts
+                        <li>Jeans
+                        <li>Sneakers
+                        <li>White or floor length dresses
+                        <li>Anything that prevents you from dancing
+                    </ul>
+                </div>
+            </div>
+            <p>
+                But ultimately, we just want people to dress up a little.<br>
+                It's a fun party and we want everyone to look sharp!
+            </p>
+            <img alt="Dressed up" src="updates/dressed-up.jpg"/>
+        </div>
+    </div>
+    <div id="photo-album">
+        <h1>Photography</h1>
+        <p>
+            While we would appreciate no phones during the ceremony,
+            we would love it if people captured those special moments during the cocktail
+            hour and reception. It would be wonderful if people could
+            <a href="https://photos.app.goo.gl/YAiyuvyqSTo6kNZC8">
+                upload to this Google Photo Album
+            </a>
+        </p>
+        <img class="img-fluid" src="updates/german-selfie.jpg" alt="Selfie Time!"/>
+    </div>
+
+    <div class="byline">
         <p>
             Looking forward to seeing everyone!
         </p>
     </div>
 </div>
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
